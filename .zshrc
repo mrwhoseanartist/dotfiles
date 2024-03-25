@@ -261,7 +261,8 @@ if [ -f /etc/zsh_command_not_found ]; then
     . /etc/zsh_command_not_found
 fi
 
-figlet -f future "mr-robot" | lolcat
+#figlet -f future "mr-robot" | lolcat
+
 eval "$(starship init zsh)"
 eval "$(atuin init zsh)"
 eval "$(zoxide init zsh)"
