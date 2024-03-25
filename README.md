@@ -1,4 +1,4 @@
-#READ ME
+# READ ME <br>
 u have to run the command below after extracing the nerd fonts into ur .fonts 
 
 fc-cache -fv
