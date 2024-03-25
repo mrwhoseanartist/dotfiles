@@ -248,6 +248,7 @@ alias ls='lsd | lolcat'
 #costom
 alias bat='batcat'
 alias ports='netstat -tulanp'
+alias fzf="fzf --preview 'batcat --style=numbers --color=always --line-range :500 {}'"
 
 # enable auto-suggestions based on the history
 if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
