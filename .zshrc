@@ -241,9 +241,9 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='lsd -l | lolcat'
-alias la='lsd -A | lolcat'
-alias ls='lsd | lolcat'
+alias ll='lsd -l'
+alias la='lsd -A'
+alias ls='lsd'
 
 #costom
 alias bat='batcat'
