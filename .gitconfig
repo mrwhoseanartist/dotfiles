@@ -1,0 +1,6 @@
+[alias]
+	sts = status --short
+	stl = status --long
+	co = checkout
+	cm = commit
+	l = log	

@@ -1,14 +1,4 @@
-format = """
-$username\
-$hostname\
-$directory\
-$git_branch\
-$git_state\
-$git_status\
-$cmd_duration\
-$line_break\
-$python\
-$character"""
+format = '$all'
 
 [directory]
 style = "blue"
@@ -18,9 +8,24 @@ success_symbol = "[❯](purple)"
 error_symbol = "[❯](red)"
 vimcmd_symbol = "[❮](green)"
 
+[hostname]
+ssh_symbol = " "
+
+[package]
+symbol = "󰏗 "
+
 [git_branch]
-format = "[$branch]($style)"
+format = '\[[$symbol$branch]($style)\]'
 style = "bright-black"
+symbol = " "
+
+[battery]
+full_symbol = '🔋 '
+charging_symbol = '⚡️ '
+discharging_symbol = '💀 '
+
+[sudo]
+format = '\[[as $symbol]($style)\]'
 
 [git_status]
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
