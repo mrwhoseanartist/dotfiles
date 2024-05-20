@@ -16,14 +16,31 @@ success_symbol = "[❯](purple)"
 error_symbol = "[❯](red)"
 vimcmd_symbol = "[❮](green)"
 
+<<<<<<< HEAD
+[battery]
+full_symbol = '🔋 '
+charging_symbol = '⚡️ '
+discharging_symbol = '💀 '
+=======
+[hostname]
+ssh_symbol = " "
+
+[package]
+symbol = "󰏗 "
+>>>>>>> 5193d0d8bea5b6fc3d500cf559e06e6f629b221b
+
+[git_branch]
+format = '\[[$symbol$branch]($style)\]'
+style = "bright-black"
+symbol = " "
+
 [battery]
 full_symbol = '🔋 '
 charging_symbol = '⚡️ '
 discharging_symbol = '💀 '
 
-[git_branch]
-format = "[$branch]($style)"
-style = "bright-black"
+[sudo]
+format = '\[[as $symbol]($style)\]'
 
 [git_status]
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"

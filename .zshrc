@@ -245,6 +245,9 @@ alias ll='lsd -l'
 alias la='lsd -A'
 alias ls='lsd'
 
+alias cpy='xsel -ib'
+alias pst='xsel -ob'
+
 #costom
 alias bat='batcat'
 alias ports='netstat -tulanp'
