@@ -4,62 +4,30 @@ format = '$all'
 style = "blue"
 
 [directory.substitutions]
-"Desktop" = "Desktop 💻 "
-"Documents" = "Documents 📑 "
-"Downloads" = "Downloads 📥 "
-"Music" = " Music 󰝚 "
-"Pictures" = "Pictures 📸 "
-"Developer" = "󰲋 "
+"Documents" = "Documents 󰈙 "
+"Downloads" = "Downloads  "
+"Music" = "Music 󰝚 "
+"Pictures" = "Pictures  "
+"Developer" = "Developer 󰲋 "
 
 [character]
 success_symbol = "[❯](purple)"
 error_symbol = "[❯](red)"
 vimcmd_symbol = "[❮](green)"
 
-<<<<<<< HEAD
 [battery]
 full_symbol = '🔋 '
 charging_symbol = '⚡️ '
 discharging_symbol = '💀 '
-=======
-[hostname]
-ssh_symbol = " "
-
-[package]
-symbol = "󰏗 "
->>>>>>> 5193d0d8bea5b6fc3d500cf559e06e6f629b221b
 
 [git_branch]
-format = '\[[$symbol$branch]($style)\]'
-style = "bright-black"
-symbol = " "
-
-[battery]
-full_symbol = '🔋 '
-charging_symbol = '⚡️ '
-discharging_symbol = '💀 '
-
-[sudo]
-format = '\[[as $symbol]($style)\]'
+symbol = ""
+style = "bg:color_aqua"
+format = '[[ $symbol $branch ](fg:color_fg0 bg:color_aqua)]($style)'
 
 [git_status]
-format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
-style = "cyan"
-conflicted = '🏳'
-ahead = '🏎💨'
-behind = '😰'
-diverged = '😵'
-up_to_date = '✓'
-untracked = '🤷'
-stashed = '📦'
-modified = '📝'
-staged = '[++\($count\)](green)'
-renamed = '👅'
-deleted = '🗑'
-
-[git_state]
-format = '[\($state( $progress_current of $progress_total)\)]($style) '
-cherry_pick = '[🍒 PICKING](bold red)'
+style = "bg:color_aqua"
+format = '[[($all_status$ahead_behind )](fg:color_fg0 bg:color_aqua)]($style)'
 
 [cmd_duration]
 format = "[$duration]($style) "
