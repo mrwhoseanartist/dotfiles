@@ -244,6 +244,7 @@ fi
 alias ll='lsd -l'
 alias la='lsd -A'
 alias ls='lsd'
+alias tree='lsd --tree'
 
 alias cpy='xsel -ib'
 alias pst='xsel -ob'
