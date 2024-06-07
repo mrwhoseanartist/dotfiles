@@ -246,8 +246,8 @@ alias la='lsd -A'
 alias ls='lsd'
 alias tree='lsd --tree'
 
-alias cpy='xsel -ib'
-alias pst='xsel -ob'
+alias c='xsel -ib'
+alias v='xsel -ob'
 
 #costom
 alias bat='batcat'
