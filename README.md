@@ -1,7 +1,12 @@
 # READ ME <br>
-u have to run the command below after extracing the nerd fonts into ur .fonts 
 
-fc-cache -fv
-
-after that go the the preferences tab in the gnome-terminal and change the font to nerd one
-
+Dotfiles for linux 
+  1)zsh
+  2)neovim
+  3)conky
+  4)starship
+  5)i3
+  6)ranger
+  7)tmux
+  8)neofetch
+  9)gitconfig

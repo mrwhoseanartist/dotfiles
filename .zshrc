@@ -267,7 +267,7 @@ if [ -f /etc/zsh_command_not_found ]; then
 fi
 
 #figlet -f future "mr-robot" | lolcat
-
+eval "$(thefuck --alias fix)"
 eval "$(starship init zsh)"
 eval "$(atuin init zsh)"
 eval "$(zoxide init zsh)"
