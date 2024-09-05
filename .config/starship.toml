@@ -1,40 +1,69 @@
+# ~/.config/starship.toml
+
+# Global settings
 format = '$all'
 
+# Directory settings with custom icons
 [directory]
 style = "blue"
 
 [directory.substitutions]
-"Documents" = "Documents 󰈙 "
-"Downloads" = "Downloads  "
-"Music" = "Music 󰝚 "
-"Pictures" = "Pictures  "
-"Developer" = "Developer 󰲋 "
+"Documents" = "Documents 📂 "
+"Downloads" = "Downloads 📥 "
+"Music" = "Music 🎵 "
+"Pictures" = "Pictures 🖼️ "
+"Developer" = "Developer 💻 "
 
+# Prompt character symbols
 [character]
-success_symbol = "[❯](purple)"
+success_symbol = "[❯](green)"
 error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
+vimcmd_symbol = "[❮](white)"
 
+# Battery settings: show only when above 90%
 [battery]
 full_symbol = '🔋 '
 charging_symbol = '⚡️ '
 discharging_symbol = '💀 '
+format = '[battery]($style) '
 
+# Git branch settings with custom symbol and background color
 [git_branch]
 symbol = ""
 style = "bg:color_aqua"
 format = '[[ $symbol $branch ](fg:color_fg0 bg:color_aqua)]($style)'
 
+# Git status with updated emojis
 [git_status]
 style = "bg:color_aqua"
 format = '[[($all_status$ahead_behind )](fg:color_fg0 bg:color_aqua)]($style)'
+conflicted = '⚠️ ' 
+ahead = '⬆️'
+behind = '⬇️'
+diverged = '🔀' 
+up_to_date = '✅'
+untracked = '❓'
+stashed = '📦'
+modified = '✏️ '
+staged = '🚀 ' 
+renamed = '🔄 '
+deleted = '🗑️ '
 
+# Command duration with custom style
 [cmd_duration]
 format = "[$duration]($style) "
 style = "yellow"
 
+# Python environment
 [python]
 format = "[$virtualenv]($style) "
 style = "bright-black"
+symbol = "🐍 "
+
+# C/C++ language section
+[c]
+format = "[$language]($style) "
+style = "bright-red"
+symbol = "💻 "
 
 
