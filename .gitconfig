@@ -4,3 +4,8 @@
 	co = checkout
 	cm = commit
 	l = log	
+  	aa = add -A
+ 	lg = log --oneline --graph --decorate --all
+  	df = diff 
+ 	nb = checkout -b
+  	summary = log --sta
